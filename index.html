@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>NOOR - Minimalist Luxury Modest Fashion</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&amp;family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "tertiary-fixed-dim": "#c6c6c6",
+                        "on-surface-variant": "#4c4546",
+                        "on-tertiary-fixed": "#1a1c1c",
+                        "on-background": "#1a1c1c",
+                        "on-surface": "#1a1c1c",
+                        "on-primary-fixed-variant": "#474747",
+                        "secondary-container": "#e3e2e2",
+                        "inverse-surface": "#2f3131",
+                        "on-error": "#ffffff",
+                        "on-secondary-container": "#646464",
+                        "on-tertiary-fixed-variant": "#454747",
+                        "on-secondary": "#ffffff",
+                        "on-error-container": "#93000a",
+                        "primary-fixed-dim": "#c6c6c6",
+                        "secondary-fixed-dim": "#c7c6c6",
+                        "on-tertiary-container": "#838484",
+                        "outline-variant": "#cfc4c5",
+                        "surface-tint": "#5e5e5e",
+                        "on-secondary-fixed": "#1b1c1c",
+                        "surface-container": "#eeeeee",
+                        "error": "#ba1a1a",
+                        "tertiary": "#000000",
+                        "surface-dim": "#dadada",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-container-highest": "#e2e2e2",
+                        "primary-container": "#1b1b1b",
+                        "on-tertiary": "#ffffff",
+                        "error-container": "#ffdad6",
+                        "tertiary-fixed": "#e2e2e2",
+                        "on-primary": "#ffffff",
+                        "surface-container-high": "#e8e8e8",
+                        "surface": "#f9f9f9",
+                        "surface-bright": "#f9f9f9",
+                        "primary-fixed": "#e2e2e2",
+                        "tertiary-container": "#1a1c1c",
+                        "secondary-fixed": "#e3e2e2",
+                        "inverse-primary": "#c6c6c6",
+                        "on-primary-container": "#848484",
+                        "inverse-on-surface": "#f1f1f1",
+                        "secondary": "#5e5e5e",
+                        "outline": "#7e7576",
+                        "on-primary-fixed": "#1b1b1b",
+                        "background": "#f9f9f9",
+                        "primary": "#000000",
+                        "surface-container-low": "#f3f3f3",
+                        "surface-variant": "#e2e2e2",
+                        "on-secondary-fixed-variant": "#464747"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "margin-mobile": "16px",
+                        "gutter": "24px",
+                        "margin-desktop": "64px",
+                        "unit": "4px",
+                        "section-gap": "80px"
+                    },
+                    "fontFamily": {
+                        "body-lg": ["Manrope"],
+                        "headline-md": ["Playfair Display"],
+                        "display-lg-mobile": ["Playfair Display"],
+                        "display-lg": ["Playfair Display"],
+                        "label-sm": ["Manrope"],
+                        "body-md": ["Manrope"]
+                    },
+                    "fontSize": {
+                        "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                        "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "500"}],
+                        "display-lg-mobile": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                        "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "600"}],
+                        "label-sm": ["12px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body { background-color: #f9f9f9; }
+        .hide-scrollbar::-webkit-scrollbar { display: none; }
+        .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+</head>
+<body class="text-on-surface antialiased pt-20">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-surface px-margin-desktop flex items-center h-20 border-b border-outline-variant justify-between">
+<div class="flex items-center gap-12">
+<a class="text-display-lg font-display-lg tracking-tighter text-primary dark:text-on-surface" href="#">NOOR</a>
+<div class="hidden lg:flex items-center gap-8">
+<a class="text-primary font-bold border-b-2 border-primary pb-1 text-label-sm font-label-sm" href="#">Feed</a>
+<a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-300 text-label-sm font-label-sm" href="#">Women</a>
+<a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-300 text-label-sm font-label-sm" href="#">Men</a>
+<a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-300 text-label-sm font-label-sm" href="#">Kids</a>
+<a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-300 text-label-sm font-label-sm" href="#">Home</a>
+<a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-300 text-label-sm font-label-sm" href="#">Brands</a>
+</div>
+</div>
+<div class="flex items-center gap-6">
+<div class="relative hidden md:block">
+<input class="border-b border-outline-variant bg-transparent pb-1 pr-8 text-label-sm font-label-sm focus:outline-none focus:border-primary transition-colors w-64" placeholder="Search Listings..." type="text"/>
+<span class="material-symbols-outlined absolute right-0 bottom-1 text-on-surface-variant text-sm">search</span>
+</div>
+<button class="bg-primary text-on-primary px-6 py-2 text-label-sm font-label-sm uppercase tracking-wider rounded-none hover:bg-surface-tint transition-colors">SELL</button>
+<div class="flex items-center gap-4 text-on-surface-variant">
+<button class="hover:text-primary transition-colors"><span class="material-symbols-outlined">notifications</span></button>
+<button class="hover:text-primary transition-colors"><span class="material-symbols-outlined">favorite</span></button>
+<button class="hover:text-primary transition-colors"><span class="material-symbols-outlined">shopping_bag</span></button>
+<div class="w-8 h-8 rounded-full overflow-hidden border border-outline-variant ml-2 cursor-pointer">
+<img alt="User Profile Avatar" class="w-full h-full object-cover" data-alt="A close-up profile portrait of a confident woman with minimal, elegant makeup, representing a user avatar in a luxury minimalist interface. Soft, high-key lighting, professional photography." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAnFOOZqZ_eRtjO9oDFYURuWWHmykh_BUqZ_-7LCVcWn9SvqjxiJU6Hthux_GU-nMFb5w5fP-HVVV8bgM9duocMcbgKTUw8wQQqDkmlIF-m8ioNPC0GKajkIqn-CyWciLErZrK2tbbRxrHT-7fNlmSIwrUb-kR_Pzx8jU2UJX6_VoeCG6iPwQi5sQSJyHgQ7l3hbXk1j4KgXWsKSyvD9-oZ9ztWmZKk3Qg5oJWM1AMzIzgYHnerusos0g0hkYeu0gAjtTJOLfwbQR8"/>
+</div>
+</div>
+</div>
+</nav>
+<main class="max-w-[1600px] mx-auto px-4 md:px-margin-desktop py-12 flex gap-gutter justify-center">
+<!-- Left SideNavBar: COMMUNITY -->
+<aside class="hidden lg:flex flex-col w-64 flex-shrink-0 sticky top-32 h-[calc(100vh-8rem)] overflow-y-auto hide-scrollbar border-r border-outline-variant pr-6">
+<div class="mb-10">
+<h2 class="text-label-sm font-bold tracking-widest uppercase text-primary mb-2">COMMUNITY &amp; DISCOVERY</h2>
+<p class="text-body-md font-body-md text-on-surface-variant">Discover the latest in Modest Fashion</p>
+</div>
+<!-- Trending Closets -->
+<div class="mb-8">
+<h3 class="text-label-sm font-label-sm text-on-surface-variant mb-4 uppercase tracking-widest">Trending Closets</h3>
+<div class="flex flex-col gap-4">
+<a class="flex items-center gap-3 hover:bg-surface-container-lowest p-2 -ml-2 rounded transition-colors group" href="#">
+<img alt="Closet 1" class="w-8 h-8 rounded-full border border-outline-variant object-cover group-hover:border-primary transition-colors" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBfbkQhhKJEeqcjCCVFk8uejUzJrAC6C9d5B95Up8Cd89kGa_oJ_zAnAKphw1YiHKPotvx-OMCyMudDOvMA0cuHR_jB5hJtEVTEER2OBs9V55DFCWE0qzUQp7bbMnMxxtM0EAjC7MnfrC6iDwu67KTl5Ms4ts4iovkYINwZP0g5PxIEoqKufYrDlXcqRq5ezjVi2yAUdu2Wll-H0LuAchq9RlOkMx3txiuoPBHVcdah9I1xa7xZQImEq5xkaqwyaBH5c25dup9o3AI"/>
+<div class="flex flex-col">
+<span class="text-label-sm font-bold text-primary group-hover:underline">@minimalist_edit</span>
+<span class="text-[10px] text-on-surface-variant">12k Followers</span>
+</div>
+</a>
+<a class="flex items-center gap-3 hover:bg-surface-container-lowest p-2 -ml-2 rounded transition-colors group" href="#">
+<img alt="Closet 2" class="w-8 h-8 rounded-full border border-outline-variant object-cover group-hover:border-primary transition-colors" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB_4UXu65XdqTlBoy6b6I_2-M4Wu1mEtspd3B-o9vkl5QHb204XsD9E-S9iJ_gs_uRuEFMoGzQsi0Pp2qOOnRs2lCcqrwiZf7RVo83wfaPAo-ibKbmUagPgtx7Q1g5spVXJg_EWAYWtjaIqv3K595acoHW-NeK21HyP86EE0l4jR6fQg05uJh1MDTOfqU3lQkA_CIZjhL8IArnB8EZyYiBUOYzkDctSWbV9Npt0edDfUUXzXE3xYLpcTArD-u3F-ub4Tz2oUuO5_Aw"/>
+<div class="flex flex-col">
+<span class="text-label-sm font-bold text-primary group-hover:underline">@vintage_modest</span>
+<span class="text-[10px] text-on-surface-variant">8.4k Followers</span>
+</div>
+</a>
+<a class="flex items-center gap-3 hover:bg-surface-container-lowest p-2 -ml-2 rounded transition-colors group" href="#">
+<img alt="Closet 3" class="w-8 h-8 rounded-full border border-outline-variant object-cover group-hover:border-primary transition-colors" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCSilEa2dN_k6UV7xhYFbHhnG05j90cBXVTgRLU9A7Hx0FayKSINbRW7qfvH0mJbeY6sbk5xTqZh15UxYrmJU6s3kLwMLuuvM3Zq1czGt6dcBYQV_q6SA2WGq4vUnXlIprSL2_6-sQ4TgrSzNMf9D2Zg5TloAGN9-vtFRV1ptKIDJ37MvoiHSV9zfs_e2xWdJUDSKzuaem40jGS7bibBECzry1q7GqI94Ra9HpKt2GFpn4ZE64pEW1DJeqev9ODpB1iht3mvrdiz8Q"/>
+<div class="flex flex-col">
+<span class="text-label-sm font-bold text-primary group-hover:underline">@silk_and_stone</span>
+<span class="text-[10px] text-on-surface-variant">45k Followers</span>
+</div>
+</a>
+</div>
+</div>
+<!-- Featured Sellers -->
+<div class="mb-8">
+<h3 class="text-label-sm font-label-sm text-on-surface-variant mb-4 uppercase tracking-widest">Featured Sellers</h3>
+<div class="flex flex-col gap-4">
+<a class="flex items-center gap-3 hover:bg-surface-container-lowest p-2 -ml-2 rounded transition-colors group" href="#">
+<img alt="Seller 1" class="w-8 h-8 rounded-full border border-outline-variant object-cover group-hover:border-primary transition-colors" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAGAhSrImd-DzrXEDyVt3uJT5UElnLodiO-TiPbpoL-2nOzLHJvXolxD6TlmNwyU4qPAbWMbSdRDCgGwinPLfT3rbO80FVfzqBTvXJ9rVjzrjFZMhSAlI-JyLTrVs-MQ0MzRUjMlvW4IamKXb87KFiYEtpUiBAC_nSAPWzNfHvkkDjHLUxwZjl2aD4hfeZyaYgfF7upBuwgkNuzy8rEAXd-Xu-q4jv1ebCHFyqKmFFhtd8czpooz3dBBtnEtriezDnCH7veYIJGOzw"/>
+<div class="flex flex-col">
+<span class="text-label-sm font-bold text-primary group-hover:underline">@modestluxuryshop</span>
+<div class="flex items-center text-[10px] text-on-surface-variant">
+<span class="material-symbols-outlined text-[10px] text-primary">star</span>
+<span class="material-symbols-outlined text-[10px] text-primary">star</span>
+<span class="material-symbols-outlined text-[10px] text-primary">star</span>
+<span class="material-symbols-outlined text-[10px] text-primary">star</span>
+<span class="material-symbols-outlined text-[10px] text-primary">star</span>
+<span class="ml-1">(4.9)</span>
+</div>
+</div>
+</a>
+<a class="flex items-center gap-3 hover:bg-surface-container-lowest p-2 -ml-2 rounded transition-colors group" href="#">
+<img alt="Seller 2" class="w-8 h-8 rounded-full border border-outline-variant object-cover group-hover:border-primary transition-colors" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCXNvfyuU-hJPxhjXY8rRyGUkFhrYZ8_t8mnU06WbqWh9MonvopOPxX8rjLlpbQfxJPxs0PYLGwC2Hj9zdHv9TvrcBdw7CbLn6HuvQRfH9Yaxau5lU_vruUsDaQ-2uWTg0cdLLqLgyAeNxvVWxd7TdsElA2wzcXl-qqnC7b8CJ9ol43abaQa6JGQgknADXldoe7bk7hCwLnusfDqRCuAZZenRWv3doZEULdrREm7A6NhROV5-KJFUVaryI4T8UW2jw37l5Uz3qAjk0"/>
+<div class="flex flex-col">
+<span class="text-label-sm font-bold text-primary group-hover:underline">@mens_modest_co</span>
+<div class="flex items-center text-[10px] text-on-surface-variant">
+<span class="material-symbols-outlined text-[10px] text-primary">star</span>
+<span class="material-symbols-outlined text-[10px] text-primary">star</span>
+<span class="material-symbols-outlined text-[10px] text-primary">star</span>
+<span class="material-symbols-outlined text-[10px] text-primary">star</span>
+<span class="material-symbols-outlined text-[10px] text-outline-variant">star</span>
+<span class="ml-1">(4.2)</span>
+</div>
+</div>
+</a>
+</div>
+</div>
+<nav class="flex flex-col gap-2 mb-10 border-t border-outline-variant pt-6">
+<h3 class="text-label-sm font-label-sm text-on-surface-variant mb-2 uppercase tracking-widest">My Activity</h3>
+<a class="flex items-center gap-3 text-on-surface-variant hover:bg-surface-container-lowest p-2 -ml-2 rounded transition-all text-label-sm font-label-sm" href="#">
+<span class="material-symbols-outlined">history</span> Recently Viewed
+                </a>
+<a class="flex items-center gap-3 text-on-surface-variant hover:bg-surface-container-lowest p-2 -ml-2 rounded transition-all text-label-sm font-label-sm" href="#">
+<span class="material-symbols-outlined">bookmark</span> Saved Items
+                </a>
+</nav>
+<!-- Specific Categories -->
+<div>
+<h3 class="text-label-sm font-label-sm text-on-surface-variant mb-4 uppercase tracking-widest">MODEST CATEGORIES</h3>
+<ul class="flex flex-col gap-3 text-body-md font-body-md text-on-surface hover:[&amp;&gt;li]:text-primary [&amp;&gt;li]:transition-colors [&amp;&gt;li]:cursor-pointer">
+<li>Abayas</li>
+<li>Hijabs</li>
+<li>Maxi Dresses</li>
+<li>Modest Activewear</li>
+<li>Prayer Rugs</li>
+</ul>
+</div>
+</aside>
+<!-- Main Feed Canvas -->
+<section class="flex-1 max-w-3xl flex flex-col gap-section-gap min-w-0">
+<!-- Feed Tabs -->
+<div class="flex gap-8 border-b border-outline-variant pb-4 overflow-x-auto hide-scrollbar">
+<button class="text-primary font-bold text-label-sm font-label-sm uppercase tracking-widest whitespace-nowrap border-b-2 border-primary pb-4 -mb-[18px]">Following</button>
+<button class="text-on-surface-variant hover:text-primary transition-colors text-label-sm font-label-sm uppercase tracking-widest whitespace-nowrap">Trending</button>
+<button class="text-on-surface-variant hover:text-primary transition-colors text-label-sm font-label-sm uppercase tracking-widest whitespace-nowrap">New Arrivals</button>
+<button class="text-on-surface-variant hover:text-primary transition-colors text-label-sm font-label-sm uppercase tracking-widest whitespace-nowrap">Recommended</button>
+</div>
+<!-- Featured Collection Hero -->
+<article class="relative w-full aspect-[4/3] bg-surface-container border border-outline-variant overflow-hidden group cursor-pointer">
+<div class="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors duration-500 z-10"></div>
+<img alt="Ramadan Collection" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" data-alt="A high-fashion editorial photograph of a model wearing a luxurious, flowing silk abaya in deep emerald green. The setting is minimalist with soft, diffused studio lighting highlighting the rich texture of the fabric. The overall mood is elegant, exclusive, and serene." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCZL4NFLmweaXnwmr2EQZO5Qqg7Jbxsf0V_n0I8Fo2kaSVpMHO7szX7VjFB95G3RZ1tdEl9c-Jnmb2rSv9KePIY8lQ9F8fRA8SeFpzBIZnA6vNspTpPLqVbQDRqH1f-DjHFwFPqO3M5syonwLSpmUVt7dgvkwwssjsAR-IGVdj8CYO95TFS5yTo0Grh70RnDbMZAFrdUsmPHa847p1MDjI9CcKe3p39bcCdsDJGyjFoqJ8qIaQtnnm1SEbp9Ge_GSeCb3X4F8d7C_Q"/>
+<div class="absolute bottom-0 left-0 p-8 z-20 w-full bg-gradient-to-t from-black/80 to-transparent">
+<span class="inline-block bg-white text-black px-3 py-1 text-[10px] font-bold tracking-widest uppercase mb-4">Exclusive Drop</span>
+<h2 class="text-display-lg text-white mb-2 leading-tight">The Ramadan<br/>Collection</h2>
+<p class="text-body-md text-white/80 max-w-md">Discover curated modest pieces designed for elegance and reflection.</p>
+</div>
+</article>
+<!-- Social Product Cards Stream -->
+<div class="flex flex-col gap-16">
+<!-- Card 1 -->
+<article class="flex flex-col gap-4 border border-outline-variant p-6 bg-surface-container-lowest shadow-sm">
+<!-- Seller Header -->
+<div class="flex items-center justify-between mb-2">
+<div class="flex items-center gap-3">
+<div class="w-12 h-12 rounded-full overflow-hidden border border-outline-variant">
+<img alt="Seller Avatar" class="w-full h-full object-cover" data-alt="A crisp, professional headshot of a stylish woman wearing a neutral-toned hijab, smiling softly. Minimalist grey background, high-end studio lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAGAhSrImd-DzrXEDyVt3uJT5UElnLodiO-TiPbpoL-2nOzLHJvXolxD6TlmNwyU4qPAbWMbSdRDCgGwinPLfT3rbO80FVfzqBTvXJ9rVjzrjFZMhSAlI-JyLTrVs-MQ0MzRUjMlvW4IamKXb87KFiYEtpUiBAC_nSAPWzNfHvkkDjHLUxwZjl2aD4hfeZyaYgfF7upBuwgkNuzy8rEAXd-Xu-q4jv1ebCHFyqKmFFhtd8czpooz3dBBtnEtriezDnCH7veYIJGOzw"/>
+</div>
+<div>
+<h4 class="text-label-sm font-label-sm text-primary flex items-center gap-2">
+                                    @modestluxuryshop
+                                    <span class="text-[10px] font-normal text-on-surface-variant flex items-center"><span class="material-symbols-outlined text-[12px] text-primary">star</span> 4.9 (124 reviews)</span>
+</h4>
+<p class="text-[11px] text-on-surface-variant font-medium">18.5k Followers • Posted 2 hours ago</p>
+</div>
+</div>
+<button class="text-label-sm font-bold border border-primary px-6 py-2 hover:bg-primary hover:text-white transition-colors uppercase tracking-widest">FOLLOW</button>
+</div>
+<!-- Product Image -->
+<div class="w-full aspect-square bg-surface-container-lowest border border-outline-variant relative group">
+<img alt="Pleated Maxi Dress" class="w-full h-full object-cover" data-alt="A minimalist flat lay photograph of a sophisticated beige pleated maxi dress paired with a delicate gold chain necklace and structured cream leather handbag. The items are arranged aesthetically on a pristine white marble surface with soft natural light casting gentle shadows." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDlzY83Ub_4kJmRNQL9lYv2Is9pIn-E3Zb4nq8YWvijp2ltwLI8eqCk1WBOBiDwOWMZ3ToHfe0tFbXKdgX6DktrLnUcl8ZPWJQdJzmwElUzfAWTSB666VxDjSGFzXyUwX5AgswgmZ0impfKbapwZY_eqlaRP2CsyxjEuSIvO4gkjfOy1QKDEUdCZr4-S4OSWH70GK1yNe3JlBry-k_c3ZZW31zLilGVUqnGgFxh0zPUFeQ74emPF61q4q7wh9Yy-VjbnFC7BjHd1Ko"/>
+</div>
+<!-- Post Details -->
+<div>
+<div class="flex justify-between items-start mb-2">
+<h3 class="text-headline-md font-headline-md text-primary">Pleated Crepe Maxi Dress</h3>
+<div class="text-right">
+<span class="text-headline-md font-headline-md block">$245</span>
+<span class="text-label-sm text-on-surface-variant line-through block">Retail $450</span>
+</div>
+</div>
+<p class="text-body-md text-on-surface-variant mb-6">Pristine condition, worn once for a shoot. The drape on this heavy crepe is incredible. Perfect for formal events or elevated everyday wear. Size Medium.</p>
+<!-- Actions -->
+<div class="flex gap-4 mb-6">
+<button class="flex-1 bg-white text-primary border border-primary px-6 py-3 text-label-sm font-bold tracking-wider hover:bg-surface-container-low transition-colors text-center">MAKE OFFER</button>
+<button class="flex-1 bg-primary text-white border border-primary px-6 py-3 text-label-sm font-bold tracking-wider hover:bg-surface-tint transition-colors text-center flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-[18px]">library_add</span> ADD TO BUNDLE
+                            </button>
+</div>
+<!-- Social Engagement -->
+<div class="flex items-center justify-between pt-4 border-t border-outline-variant">
+<div class="flex gap-8">
+<button class="flex items-center gap-2 text-on-surface-variant hover:text-primary transition-colors group">
+<span class="material-symbols-outlined group-hover:text-error transition-colors" style="font-variation-settings: 'FILL' 0;">favorite</span>
+<span class="text-label-sm font-bold">1.2k Likes</span>
+</button>
+<button class="flex items-center gap-2 text-on-surface-variant hover:text-primary transition-colors">
+<span class="material-symbols-outlined">chat_bubble</span>
+<span class="text-label-sm font-bold">48 Comments</span>
+</button>
+<button class="flex items-center gap-2 text-on-surface-variant hover:text-primary transition-colors">
+<span class="material-symbols-outlined">share</span>
+<span class="text-label-sm font-bold">Share</span>
+</button>
+</div>
+</div>
+</div>
+</article>
+<!-- Card 2 -->
+<article class="flex flex-col gap-4 border border-outline-variant p-6 bg-surface-container-lowest shadow-sm">
+<div class="flex items-center justify-between mb-2">
+<div class="flex items-center gap-3">
+<div class="w-12 h-12 rounded-full overflow-hidden border border-outline-variant">
+<img alt="Seller Avatar" class="w-full h-full object-cover" data-alt="A sharp, black and white portrait of a male fashion seller in a tailored minimalist jacket. High contrast, clean white background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCXNvfyuU-hJPxhjXY8rRyGUkFhrYZ8_t8mnU06WbqWh9MonvopOPxX8rjLlpbQfxJPxs0PYLGwC2Hj9zdHv9TvrcBdw7CbLn6HuvQRfH9Yaxau5lU_vruUsDaQ-2uWTg0cdLLqLgyAeNxvVWxd7TdsElA2wzcXl-qqnC7b8CJ9ol43abaQa6JGQgknADXldoe7bk7hCwLnusfDqRCuAZZenRWv3doZEULdrREm7A6NhROV5-KJFUVaryI4T8UW2jw37l5Uz3qAjk0"/>
+</div>
+<div>
+<h4 class="text-label-sm font-label-sm text-primary flex items-center gap-2">
+                                    @mens_modest_co
+                                    <span class="text-[10px] font-normal text-on-surface-variant flex items-center"><span class="material-symbols-outlined text-[12px] text-primary">star</span> 4.2 (56 reviews)</span>
+</h4>
+<p class="text-[11px] text-on-surface-variant font-medium">9.1k Followers • Posted 5 hours ago</p>
+</div>
+</div>
+<button class="text-label-sm font-bold border border-primary px-6 py-2 hover:bg-primary hover:text-white transition-colors uppercase tracking-widest">FOLLOW</button>
+</div>
+<div class="w-full aspect-square bg-surface-container-lowest border border-outline-variant relative group">
+<img alt="Oversized Linen Shirt" class="w-full h-full object-cover" data-alt="An editorial shot of a crisp, white oversized linen shirt hanging on a sleek matte black hanger against a textured concrete wall. The lighting is dramatic and directional, highlighting the weave of the linen fabric and creating a moody, minimalist aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD3xHn21jF0HF__wJ1PB5nx3w6Y6QO7V5bL-9L0B37h2F8taYAhhH35YULpCctgHQeW9_oncymWhgCT02qjj5ZIs3lPkGN2qCvFyr7SnG4YKBjthpD8uNUfy7hw1yRWzY-hNq9CW4QtahLoB4VpBXFYZB1flR4omx8rPoA8KgUux_O6Ay5UXLuXZeVo5ARrAYfP-ZdUvRopxKp6wlgwqQVlVie5LwkUJgb8tYh5XkLuuxKSmmvmFmlIOeItSEV9YKF23Ybg-Mzy8a0"/>
+</div>
+<div>
+<div class="flex justify-between items-start mb-2">
+<h3 class="text-headline-md font-headline-md text-primary">Oversized Linen Tunic</h3>
+<div class="text-right">
+<span class="text-headline-md font-headline-md block">$85</span>
+<span class="text-label-sm text-on-surface-variant line-through block">Retail $120</span>
+</div>
+</div>
+<p class="text-body-md text-on-surface-variant mb-6">Breathable heavy linen blend. Features a mandarin collar and extended hem for modest coverage. Brand new with tags. Size Large but fits oversized.</p>
+<div class="flex gap-4 mb-6">
+<button class="flex-1 bg-white text-primary border border-primary px-6 py-3 text-label-sm font-bold tracking-wider hover:bg-surface-container-low transition-colors text-center">MAKE OFFER</button>
+<button class="flex-1 bg-primary text-white border border-primary px-6 py-3 text-label-sm font-bold tracking-wider hover:bg-surface-tint transition-colors text-center flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-[18px]">library_add</span> ADD TO BUNDLE
+                            </button>
+</div>
+<div class="flex items-center justify-between pt-4 border-t border-outline-variant">
+<div class="flex gap-8">
+<button class="flex items-center gap-2 text-on-surface-variant hover:text-primary transition-colors group">
+<span class="material-symbols-outlined group-hover:text-error transition-colors" style="font-variation-settings: 'FILL' 0;">favorite</span>
+<span class="text-label-sm font-bold">856 Likes</span>
+</button>
+<button class="flex items-center gap-2 text-on-surface-variant hover:text-primary transition-colors">
+<span class="material-symbols-outlined">chat_bubble</span>
+<span class="text-label-sm font-bold">12 Comments</span>
+</button>
+<button class="flex items-center gap-2 text-on-surface-variant hover:text-primary transition-colors">
+<span class="material-symbols-outlined">share</span>
+<span class="text-label-sm font-bold">Share</span>
+</button>
+</div>
+</div>
+</div>
+</article>
+</div>
+<!-- Loading Indicator -->
+<div class="flex justify-center py-12">
+<div class="w-8 h-8 border-2 border-outline-variant border-t-primary rounded-full animate-spin"></div>
+</div>
+</section>
+<!-- Right SideNavBar: LIVE & ACTIVE -->
+<aside class="hidden xl:flex flex-col w-80 flex-shrink-0 sticky top-32 h-[calc(100vh-8rem)] overflow-y-auto hide-scrollbar border-l border-outline-variant pl-8 gap-8">
+<div class="mb-4">
+<h2 class="text-label-sm font-bold tracking-widest uppercase text-primary mb-2">LIVE &amp; ACTIVE</h2>
+<p class="text-body-md font-body-md text-on-surface-variant">Real-time community updates</p>
+</div>
+<!-- Live Shopping -->
+<div>
+<h3 class="flex items-center gap-2 text-label-sm font-bold mb-4 text-primary uppercase tracking-widest">
+<span class="material-symbols-outlined text-[18px]">live_tv</span> Live Shopping
+                </h3>
+<div class="grid grid-cols-2 gap-2 mb-2">
+<!-- Live Thumbnail 1 -->
+<div class="relative w-full aspect-[3/4] bg-surface-container border border-outline-variant overflow-hidden group cursor-pointer">
+<img alt="Live Show" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A dimly lit, chic boutique interior showcasing racks of minimalist clothing. Soft focus background with a warm spotlight highlighting a central display. Aesthetic is high-end retail." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBkaAaaTV4FwHmReCGoLy2xiLvxuFC8Hyk1Mv6aZ3gD7pcJiL_YvKWayqlZXqnoCwoCucgLxTFbm-7j8uK_Ntbhaqc6WGw6DRj_nK5KHPjoiDsrcKPWqabSb71lyJAQMtr9lOHElSozP4rg79VY3V78V7RfYrtG2KHBkIM8pf-JsTljqzSUvawQ5a_1auZzxZwIefz2KCLyBgWPswj7MyPWMH_Zg0DL0vI14rC9fK_yEewExcKN1drvwcYkS9rCLbgAX0XIrwO1uCM"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+<div class="absolute top-2 left-2 flex flex-col gap-1">
+<span class="bg-error text-white text-[9px] font-bold px-1.5 py-0.5 rounded-sm animate-pulse w-max">LIVE</span>
+<span class="bg-black/50 backdrop-blur-sm text-white text-[9px] font-bold px-1.5 py-0.5 rounded-sm flex items-center gap-1 w-max">
+<span class="material-symbols-outlined text-[10px]">visibility</span> 450
+                            </span>
+</div>
+<div class="absolute bottom-2 left-2 right-2">
+<p class="text-white text-[11px] font-bold leading-tight line-clamp-2">Luxury Abaya Clear Out</p>
+</div>
+</div>
+<!-- Live Thumbnail 2 -->
+<div class="relative w-full aspect-[3/4] bg-surface-container border border-outline-variant overflow-hidden group cursor-pointer">
+<img alt="Live Show" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A close-up of hands organizing elegant silk scarves and gold jewelry on a pristine white marble table. The lighting is bright and airy, typical of a professional product flat lay setup." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBmylt1qMJeMAGEy6oDNvWb_MsSG7nNUdsIkkPfV5uYnUak1SMfegrIXRPG1BCeIfou3M6tmITusgs3OBc9lfVnxaHbb4KLvNtbvisMIwW0U-UAB556WJ4okWbDvv-Tz5auD4L-xIGRilNPTdz9Kz7mcFtZM-rWBT91BFSPDTuzU6LRZGv0tCX2cnX71fLdLS3QaTLse4QMQEquACH8_rOFnQjAh62J28MOcM5exg-ZNmMg9Ob80sQmZ5jCx4bPRKkqBnOMOSdG4sg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+<div class="absolute top-2 left-2 flex flex-col gap-1">
+<span class="bg-error text-white text-[9px] font-bold px-1.5 py-0.5 rounded-sm animate-pulse w-max">LIVE</span>
+<span class="bg-black/50 backdrop-blur-sm text-white text-[9px] font-bold px-1.5 py-0.5 rounded-sm flex items-center gap-1 w-max">
+<span class="material-symbols-outlined text-[10px]">visibility</span> 1.2k
+                            </span>
+</div>
+<div class="absolute bottom-2 left-2 right-2">
+<p class="text-white text-[11px] font-bold leading-tight line-clamp-2">Eid Jewelry Drop</p>
+</div>
+</div>
+</div>
+<button class="w-full text-center text-[11px] font-bold text-primary hover:underline uppercase tracking-widest mt-2">See All Live Shows</button>
+</div>
+<!-- Community Activity -->
+<div>
+<h3 class="flex items-center gap-2 text-label-sm font-bold mb-4 text-primary uppercase tracking-widest">
+<span class="material-symbols-outlined text-[18px]">notifications_active</span> Recent Activity
+                </h3>
+<ul class="flex flex-col gap-4">
+<li class="flex gap-3 text-body-md text-on-surface">
+<div class="w-8 h-8 rounded-full overflow-hidden border border-outline-variant flex-shrink-0">
+<img alt="Avatar" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBfbkQhhKJEeqcjCCVFk8uejUzJrAC6C9d5B95Up8Cd89kGa_oJ_zAnAKphw1YiHKPotvx-OMCyMudDOvMA0cuHR_jB5hJtEVTEER2OBs9V55DFCWE0qzUQp7bbMnMxxtM0EAjC7MnfrC6iDwu67KTl5Ms4ts4iovkYINwZP0g5PxIEoqKufYrDlXcqRq5ezjVi2yAUdu2Wll-H0LuAchq9RlOkMx3txiuoPBHVcdah9I1xa7xZQImEq5xkaqwyaBH5c25dup9o3AI"/>
+</div>
+<p class="text-[13px] leading-tight"><span class="font-bold text-primary">Sarah</span> shared a new listing: <a class="text-primary hover:underline italic" href="#">Vintage Silk Hijab</a> <span class="text-[10px] text-on-surface-variant block mt-1">2m ago</span></p>
+</li>
+<li class="flex gap-3 text-body-md text-on-surface">
+<div class="w-8 h-8 rounded-full overflow-hidden border border-outline-variant flex-shrink-0">
+<img alt="Avatar" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB_4UXu65XdqTlBoy6b6I_2-M4Wu1mEtspd3B-o9vkl5QHb204XsD9E-S9iJ_gs_uRuEFMoGzQsi0Pp2qOOnRs2lCcqrwiZf7RVo83wfaPAo-ibKbmUagPgtx7Q1g5spVXJg_EWAYWtjaIqv3K595acoHW-NeK21HyP86EE0l4jR6fQg05uJh1MDTOfqU3lQkA_CIZjhL8IArnB8EZyYiBUOYzkDctSWbV9Npt0edDfUUXzXE3xYLpcTArD-u3F-ub4Tz2oUuO5_Aw"/>
+</div>
+<p class="text-[13px] leading-tight"><span class="font-bold text-primary">Amina</span> made an offer on <a class="text-primary hover:underline italic" href="#">Pleated Maxi Dress</a> <span class="text-[10px] text-on-surface-variant block mt-1">15m ago</span></p>
+</li>
+<li class="flex gap-3 text-body-md text-on-surface">
+<div class="w-8 h-8 rounded-full overflow-hidden border border-outline-variant flex-shrink-0 bg-surface-container-low flex items-center justify-center text-primary font-bold">
+                            M
+                        </div>
+<p class="text-[13px] leading-tight"><span class="font-bold text-primary">Maryam</span> liked your bundle <span class="text-[10px] text-on-surface-variant block mt-1">1h ago</span></p>
+</li>
+</ul>
+</div>
+<!-- Trending Topics -->
+<div>
+<h3 class="flex items-center gap-2 text-label-sm font-bold mb-4 text-primary uppercase tracking-widest">
+<span class="material-symbols-outlined text-[18px]">trending_up</span> Trending Topics
+                </h3>
+<ul class="flex flex-col gap-4">
+<li class="group cursor-pointer">
+<span class="text-[10px] text-on-surface-variant font-bold tracking-wider uppercase block mb-1">Top Trend</span>
+<h4 class="text-body-md font-bold text-primary group-hover:underline">Monochrome Modest Workwear</h4>
+<p class="text-[12px] text-on-surface-variant mt-1">2.4k new listings this week</p>
+</li>
+<li class="group cursor-pointer">
+<span class="text-[10px] text-on-surface-variant font-bold tracking-wider uppercase block mb-1">Trending Brand</span>
+<h4 class="text-body-md font-bold text-primary group-hover:underline">Vintage Silk Scarves</h4>
+<p class="text-[12px] text-on-surface-variant mt-1">+150% search volume</p>
+</li>
+<li class="group cursor-pointer">
+<span class="text-[10px] text-on-surface-variant font-bold tracking-wider uppercase block mb-1">Event Prep</span>
+<h4 class="text-body-md font-bold text-primary group-hover:underline">Eid Outfit Inspo</h4>
+<p class="text-[12px] text-on-surface-variant mt-1">Join the conversation</p>
+</li>
+</ul>
+</div>
+<!-- Upcoming Events -->
+<div>
+<h3 class="flex items-center gap-2 text-label-sm font-bold mb-4 text-primary uppercase tracking-widest">
+<span class="material-symbols-outlined text-[18px]">calendar_today</span> Upcoming Events
+                </h3>
+<div class="border border-outline-variant p-4 bg-surface-container-lowest">
+<div class="flex justify-between items-start mb-2">
+<h4 class="text-label-sm font-bold text-primary">Posh Party: Luxury Modesty</h4>
+<span class="text-[10px] bg-surface-container-high px-2 py-1 font-bold">TONIGHT</span>
+</div>
+<p class="text-[12px] text-on-surface-variant mb-4">Curated high-end pieces, vintage finds, and exclusive designer drops.</p>
+<button class="w-full border border-primary text-primary py-2 text-[10px] font-bold uppercase tracking-widest hover:bg-primary hover:text-white transition-colors">Set Reminder</button>
+</div>
+</div>
+<!-- Suggested Closets Horizontal Scroll inside Right Sidebar-->
+<div class="mt-4">
+<h3 class="text-label-sm font-label-sm text-on-surface-variant mb-4 uppercase tracking-widest">Suggested Closets</h3>
+<div class="flex gap-4 overflow-x-auto hide-scrollbar pb-2 snap-x">
+<!-- Closet 4 -->
+<div class="flex flex-col items-center gap-2 min-w-[80px] snap-start">
+<div class="w-16 h-16 rounded-full overflow-hidden border border-outline-variant p-0.5">
+<img alt="Closet 4" class="w-full h-full rounded-full object-cover" data-alt="A minimalist fashion portrait focusing on the texture of a chunky knit sweater. The face is partially obscured to emphasize the garment and mood." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC99jddr5ay8TG3_QAh7fwiivCr3wNLNkRkyhEBmnaWsyC2VdMFne1vx7woAA3D67H4uWPAyz0xJBzDYXjVWMIy8mnjcKiB5W_daJ3bUcL4wN5_bz41f7OLmdSj_QdwwcGjQsdUWsdgejfCj4COdRys81mwpG5gJCBKhYOQ1OBegI6AA7W-M7trr2Vpy97EPy-Das9G1N5Q9tAbcwC5YETDf29Kje0DxsUC_8P3m7ZHP-cDfECLZKAko3ISM0AstBu6nuhrtiJoF-I"/>
+</div>
+<span class="text-[11px] font-bold text-primary truncate w-full text-center">@chunky_knits</span>
+<button class="text-[9px] font-bold border border-primary px-3 py-1 hover:bg-primary hover:text-white transition-colors w-full uppercase">Follow</button>
+</div>
+<!-- New Closet 5 -->
+<div class="flex flex-col items-center gap-2 min-w-[80px] snap-start">
+<div class="w-16 h-16 rounded-full overflow-hidden border border-outline-variant p-0.5 bg-surface-container-high flex items-center justify-center">
+<span class="material-symbols-outlined text-primary">person</span>
+</div>
+<span class="text-[11px] font-bold text-primary truncate w-full text-center">@modern_muse</span>
+<button class="text-[9px] font-bold border border-primary px-3 py-1 hover:bg-primary hover:text-white transition-colors w-full uppercase">Follow</button>
+</div>
+</div>
+</div>
+</aside>
+</main>
+<!-- Footer -->
+<footer class="w-full py-12 px-margin-desktop flex flex-col items-center gap-4 border-t border-outline-variant bg-surface-container-highest dark:bg-tertiary-container mt-section-gap">
+<div class="font-display-lg text-primary text-2xl tracking-tighter mb-4">NOOR</div>
+<div class="flex flex-wrap justify-center gap-8 mb-4">
+<a class="text-on-surface-variant hover:text-primary text-label-sm font-label-sm transition-colors" href="#">Sustainability</a>
+<a class="text-on-surface-variant hover:text-primary text-label-sm font-label-sm transition-colors" href="#">Ethical Sourcing</a>
+<a class="text-on-surface-variant hover:text-primary text-label-sm font-label-sm transition-colors" href="#">Terms of Service</a>
+<a class="text-on-surface-variant hover:text-primary text-label-sm font-label-sm transition-colors" href="#">Privacy Policy</a>
+</div>
+<p class="text-on-surface-variant text-[10px] uppercase tracking-widest text-center max-w-md">
+            © 2024 NOOR MODESTY. ALL RIGHTS RESERVED.
+        </p>
+</footer>
+</body></html>
